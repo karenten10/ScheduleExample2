@@ -4,4 +4,9 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Syncfusion.Blazor" Version="19.4.0.42" />
+    <PackageReference Include="Syncfusion.Blazor.Themes" Version="19.4.0.42" />
+  </ItemGroup>
+
 </Project>
