@@ -4,7 +4,7 @@
 
 @*<SfSchedule TValue="object"></SfSchedule>*@
 
-<SfSchedule TValue=AppointmentData Height="650px" @bind-SelectedDate="@CurrentDate">
+<SfSchedule TValue=AppointmentData Height="650px" @bind-SelectedDate="@CurrentDate" @bind-CurrentView="@CurrentView">
     <ScheduleEventSettings DataSource="@DataSource"></ScheduleEventSettings>
     <ScheduleViews>
         <ScheduleView Option="View.Day"></ScheduleView>
@@ -16,6 +16,7 @@
 </SfSchedule>
 @code 
 {
+    View CurrentView = View.Month;
     DateTime CurrentDate = DateTime.Now;
     List<AppointmentData> DataSource = new List<AppointmentData>
     {
